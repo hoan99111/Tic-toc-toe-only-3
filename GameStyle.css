@@ -1,0 +1,50 @@
+.game-board {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 25px;
+  height: 500px;
+  width: 500px;
+}
+
+.game-cell {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px 5px rgba(149, 148, 139, 0.5);
+}
+
+.reset-button {
+  height: 50px;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 25px;
+  display: inline-block;
+  background-color: rgb(132, 54, 201);
+  color: white
+}
+
+.game-winner {
+    margin: auto 25px;
+    font-size: 30px;
+}
+
+.is-X {
+  background: linear-gradient(to bottom, #ea2a57, #ffa32b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.is-O {
+  background: linear-gradient(to right, #7141ff, #09ecf4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
